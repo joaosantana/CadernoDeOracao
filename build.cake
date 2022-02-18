@@ -1,7 +1,19 @@
+///////////////////////////////////////////////////////
+// VARIÁVEIS
+///////////////////////////////////////////////////////
 
 var alvo = Argument("alvo", "Testar");
-var configuracao = Argument("configuracao", "Release");
 var solucao = "./CadernoDeOracao.sln";
+
+var setupclean = new DotNetCleanSettings
+{
+    Configuration = "Release"
+};
+
+var setupbuild = new DotNetBuildSettings
+{
+    Configuration = "Release"
+};
 
 ///////////////////////////////////////////////////////
 // TAREFAS
@@ -10,7 +22,7 @@ var solucao = "./CadernoDeOracao.sln";
 Task("Limpar")
     .Does(() =>
     {
-        DotNetClean(solucao);
+        DotNetClean(solucao, setupclean);
     });
 
 Task("Restaurar")
@@ -24,7 +36,7 @@ Task("Compilar")
     .IsDependentOn("Restaurar")
     .Does(() =>
     {
-        DotNetBuild(solucao);
+        DotNetBuild(solucao, setupbuild);
     });
 
 Task("Testar")
