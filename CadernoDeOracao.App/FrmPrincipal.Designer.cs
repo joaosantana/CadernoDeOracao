@@ -39,10 +39,10 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonConfiguracoes = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonSobre = new System.Windows.Forms.ToolStripButton();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusVersao = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip
@@ -72,7 +72,7 @@
             this.toolStripButtonNovo.Name = "toolStripButtonNovo";
             this.toolStripButtonNovo.Size = new System.Drawing.Size(52, 52);
             this.toolStripButtonNovo.Text = "Novo pedido";
-            this.toolStripButtonNovo.Click += new System.EventHandler(this.toolStripButtonNovo_Click);
+            this.toolStripButtonNovo.Click += new System.EventHandler(this.ToolStripButtonNovo_Click);
             // 
             // toolStripButtonEditar
             // 
@@ -83,7 +83,7 @@
             this.toolStripButtonEditar.Name = "toolStripButtonEditar";
             this.toolStripButtonEditar.Size = new System.Drawing.Size(52, 52);
             this.toolStripButtonEditar.Text = "Editar pedido";
-            this.toolStripButtonEditar.Click += new System.EventHandler(this.toolStripButtonEditar_Click);
+            this.toolStripButtonEditar.Click += new System.EventHandler(this.ToolStripButtonEditar_Click);
             // 
             // toolStripButtonApagar
             // 
@@ -94,7 +94,7 @@
             this.toolStripButtonApagar.Name = "toolStripButtonApagar";
             this.toolStripButtonApagar.Size = new System.Drawing.Size(52, 52);
             this.toolStripButtonApagar.Text = "Apagar pedido";
-            this.toolStripButtonApagar.Click += new System.EventHandler(this.toolStripButtonApagar_Click);
+            this.toolStripButtonApagar.Click += new System.EventHandler(this.ToolStripButtonApagar_Click);
             // 
             // toolStripSeparator1
             // 
@@ -110,7 +110,7 @@
             this.toolStripButtonRespondido.Name = "toolStripButtonRespondido";
             this.toolStripButtonRespondido.Size = new System.Drawing.Size(52, 52);
             this.toolStripButtonRespondido.Text = "Pedido respondido";
-            this.toolStripButtonRespondido.Click += new System.EventHandler(this.toolStripButtonRespondido_Click);
+            this.toolStripButtonRespondido.Click += new System.EventHandler(this.ToolStripButtonRespondido_Click);
             // 
             // toolStripButtonNaoRespondido
             // 
@@ -121,7 +121,7 @@
             this.toolStripButtonNaoRespondido.Name = "toolStripButtonNaoRespondido";
             this.toolStripButtonNaoRespondido.Size = new System.Drawing.Size(52, 52);
             this.toolStripButtonNaoRespondido.Text = "Pedido não respondido";
-            this.toolStripButtonNaoRespondido.Click += new System.EventHandler(this.toolStripButtonNaoRespondido_Click);
+            this.toolStripButtonNaoRespondido.Click += new System.EventHandler(this.ToolStripButtonNaoRespondido_Click);
             // 
             // toolStripSeparator2
             // 
@@ -137,7 +137,7 @@
             this.toolStripButtonConfiguracoes.Name = "toolStripButtonConfiguracoes";
             this.toolStripButtonConfiguracoes.Size = new System.Drawing.Size(52, 52);
             this.toolStripButtonConfiguracoes.Text = "Configurações";
-            this.toolStripButtonConfiguracoes.Click += new System.EventHandler(this.toolStripButtonConfiguracoes_Click);
+            this.toolStripButtonConfiguracoes.Click += new System.EventHandler(this.ToolStripButtonConfiguracoes_Click);
             // 
             // toolStripButtonSobre
             // 
@@ -148,18 +148,18 @@
             this.toolStripButtonSobre.Name = "toolStripButtonSobre";
             this.toolStripButtonSobre.Size = new System.Drawing.Size(52, 52);
             this.toolStripButtonSobre.Text = "Sobre este app";
-            this.toolStripButtonSobre.Click += new System.EventHandler(this.toolStripButtonSobre_Click);
+            this.toolStripButtonSobre.Click += new System.EventHandler(this.ToolStripButtonSobre_Click);
             // 
-            // statusStrip1
+            // statusStrip
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusVersao});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 419);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.statusStrip1.Size = new System.Drawing.Size(624, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip";
+            this.statusStrip.Location = new System.Drawing.Point(0, 419);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.statusStrip.Size = new System.Drawing.Size(624, 22);
+            this.statusStrip.TabIndex = 1;
+            this.statusStrip.Text = "statusStrip";
             // 
             // toolStripStatusVersao
             // 
@@ -172,7 +172,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -181,8 +181,8 @@
             this.Text = "Caderno de Oração";
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,7 +200,7 @@
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripButton toolStripButtonConfiguracoes;
         private ToolStripButton toolStripButtonSobre;
-        private StatusStrip statusStrip1;
+        private StatusStrip statusStrip;
         private ToolStripStatusLabel toolStripStatusVersao;
     }
 }

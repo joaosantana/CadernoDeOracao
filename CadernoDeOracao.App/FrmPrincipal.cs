@@ -15,37 +15,37 @@ namespace CadernoDeOracao.App
 #pragma warning restore CS8602 // Desreferência de uma referência possivelmente nula.
         }
 
-        private void toolStripButtonNovo_Click(object sender, EventArgs e)
+        private void ToolStripButtonNovo_Click(object sender, EventArgs e)
         {
             NaoImplementadoHandler.MostrarAviso();
         }
 
-        private void toolStripButtonEditar_Click(object sender, EventArgs e)
+        private void ToolStripButtonEditar_Click(object sender, EventArgs e)
         {
             NaoImplementadoHandler.MostrarAviso();
         }
 
-        private void toolStripButtonApagar_Click(object sender, EventArgs e)
+        private void ToolStripButtonApagar_Click(object sender, EventArgs e)
         {
             NaoImplementadoHandler.MostrarAviso();
         }
 
-        private void toolStripButtonRespondido_Click(object sender, EventArgs e)
+        private void ToolStripButtonRespondido_Click(object sender, EventArgs e)
         {
             NaoImplementadoHandler.MostrarAviso();
         }
 
-        private void toolStripButtonNaoRespondido_Click(object sender, EventArgs e)
+        private void ToolStripButtonNaoRespondido_Click(object sender, EventArgs e)
         {
             NaoImplementadoHandler.MostrarAviso();
         }
 
-        private void toolStripButtonConfiguracoes_Click(object sender, EventArgs e)
+        private void ToolStripButtonConfiguracoes_Click(object sender, EventArgs e)
         {
             NaoImplementadoHandler.MostrarAviso();
         }
 
-        private void toolStripButtonSobre_Click(object sender, EventArgs e)
+        private void ToolStripButtonSobre_Click(object sender, EventArgs e)
         {
             NaoImplementadoHandler.MostrarAviso();
         }
