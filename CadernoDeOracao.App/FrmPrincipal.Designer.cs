@@ -39,7 +39,10 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonConfiguracoes = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonSobre = new System.Windows.Forms.ToolStripButton();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusVersao = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip
@@ -147,11 +150,29 @@
             this.toolStripButtonSobre.Text = "Sobre este app";
             this.toolStripButtonSobre.Click += new System.EventHandler(this.toolStripButtonSobre_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusVersao});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 419);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.statusStrip1.Size = new System.Drawing.Size(624, 22);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip";
+            // 
+            // toolStripStatusVersao
+            // 
+            this.toolStripStatusVersao.Name = "toolStripStatusVersao";
+            this.toolStripStatusVersao.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusVersao.Text = "toolStripStatusVersao";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 301);
+            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -160,6 +181,8 @@
             this.Text = "Caderno de Oração";
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +200,7 @@
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripButton toolStripButtonConfiguracoes;
         private ToolStripButton toolStripButtonSobre;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel toolStripStatusVersao;
     }
 }

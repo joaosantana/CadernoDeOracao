@@ -1,5 +1,7 @@
 using CadernoDeOracao.App.Handlers;
 
+using System.Reflection;
+
 namespace CadernoDeOracao.App
 {
     public partial class FrmPrincipal : Form
@@ -7,6 +9,10 @@ namespace CadernoDeOracao.App
         public FrmPrincipal()
         {
             InitializeComponent();
+#pragma warning disable CS8602 // Desreferência de uma referência possivelmente nula.
+            toolStripStatusVersao.Text = string.Format("Versão {0}", 
+                Assembly.GetEntryAssembly().GetName().Version.ToString());
+#pragma warning restore CS8602 // Desreferência de uma referência possivelmente nula.
         }
 
         private void toolStripButtonNovo_Click(object sender, EventArgs e)
